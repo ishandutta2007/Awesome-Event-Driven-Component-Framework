@@ -68,51 +68,51 @@ The following SaaS and managed cloud platforms represent category leaders in eve
 
 ## 🐙 Open-Source GitHub Projects
 
-Explore the most prominent open-source event-driven component frameworks, low-code builders, and reactive application platforms. Sorted descending by **GitHub Star Count**.
+Explore the most prominent open-source event-driven component frameworks, low-code builders, and reactive application platforms. Sorted descending by **GitHub Stars_Count**.
 
-- **[NocoDB](https://github.com/nocodb/nocodb)** [![GitHub stars](https://img.shields.io/github/stars/nocodb/nocodb?style=social&color=white)](https://github.com/nocodb/nocodb/stargazers)  
+- **[NocoDB](https://github.com/nocodb/nocodb)** [![GitHub_Stars](https://img.shields.io/github/stars/nocodb/nocodb?style=social&color=white)](https://github.com/nocodb/nocodb/stargazers)  
   Open-source smart spreadsheet and relational app builder (AGPL-3.0). Connects to MySQL, PostgreSQL, SQL Server, and SQLite. Features an API-first architecture, reactive grid component interactions, webhooks, and event-triggered automations.
 
-- **[Payload CMS](https://github.com/payloadcms/payload)** [![GitHub stars](https://img.shields.io/github/stars/payloadcms/payload?style=social&color=white)](https://github.com/payloadcms/payload/stargazers)  
+- **[Payload CMS](https://github.com/payloadcms/payload)** [![GitHub_Stars](https://img.shields.io/github/stars/payloadcms/payload?style=social&color=white)](https://github.com/payloadcms/payload/stargazers)  
   Code-first full-stack TypeScript framework (MIT) with modular React UI components. Provides event-driven document lifecycle hooks (`beforeChange`, `afterRead`), native GraphQL/REST generation, and headless application composition.
 
-- **[ToolJet](https://github.com/ToolJet/ToolJet)** [![GitHub stars](https://img.shields.io/github/stars/ToolJet/ToolJet?style=social&color=white)](https://github.com/ToolJet/ToolJet/stargazers)  
+- **[ToolJet](https://github.com/ToolJet/ToolJet)** [![GitHub_Stars](https://img.shields.io/github/stars/ToolJet/ToolJet?style=social&color=white)](https://github.com/ToolJet/ToolJet/stargazers)  
   Open-source low-code platform (AGPL-3.0) with module-based component composition. Supports bidirectional event parameters between parent and child modules (`{{input.userData}}` $\leftrightarrow$ `{{components.<module>.submittedData}}`) and visual workflow automation nodes.
 
-- **[Appsmith](https://github.com/appsmithorg/appsmith)** [![GitHub stars](https://img.shields.io/github/stars/appsmithorg/appsmith?style=social&color=white)](https://github.com/appsmithorg/appsmith/stargazers)  
+- **[Appsmith](https://github.com/appsmithorg/appsmith)** [![GitHub_Stars](https://img.shields.io/github/stars/appsmithorg/appsmith?style=social&color=white)](https://github.com/appsmithorg/appsmith/stargazers)  
   Open-source low-code internal tool builder (Apache-2.0) featuring 45+ UI widgets and 50+ datasource connectors. Uses declarative JS bindings (`{{ }}`) with an automatic reactive dependency engine that recalculates widget states on data changes without imperative event listeners.
 
-- **[Directus](https://github.com/directus/directus)** [![GitHub stars](https://img.shields.io/github/stars/directus/directus?style=social&color=white)](https://github.com/directus/directus/stargazers)  
+- **[Directus](https://github.com/directus/directus)** [![GitHub_Stars](https://img.shields.io/github/stars/directus/directus?style=social&color=white)](https://github.com/directus/directus/stargazers)  
   Real-time open data platform and application engine (BOSL-1.0). Provides a dynamic Vue.js administrative app with modular reactive component displays, custom interface extensions, and event-driven data flows.
 
-- **[Refine](https://github.com/refinedev/refine)** [![GitHub stars](https://img.shields.io/github/stars/refinedev/refine?style=social&color=white)](https://github.com/refinedev/refine/stargazers)  
+- **[Refine](https://github.com/refinedev/refine)** [![GitHub_Stars](https://img.shields.io/github/stars/refinedev/refine?style=social&color=white)](https://github.com/refinedev/refine/stargazers)  
   Headless React framework (MIT) for building enterprise internal tools, admin panels, and CRUD apps. Decouples business logic and state from UI presentation; provides event-driven hooks for data access, routing, access control, and live notifications.
 
-- **[Budibase](https://github.com/Budibase/budibase)** [![GitHub stars](https://img.shields.io/github/stars/Budibase/budibase?style=social&color=white)](https://github.com/Budibase/budibase/stargazers)  
+- **[Budibase](https://github.com/Budibase/budibase)** [![GitHub_Stars](https://img.shields.io/github/stars/Budibase/budibase?style=social&color=white)](https://github.com/Budibase/budibase/stargazers)  
   Open-source low-code platform (GPL-3.0) with a composable Blocks system. Pre-assembled blocks (Cards, Forms, Repeaters, Charts) encapsulate nested UI structures with scoped reactive bindings (`{{ MyFormBlock.Fields.Email }}`) and built-in automation pipelines.
 
-- **[React Admin](https://github.com/marmelab/react-admin)** [![GitHub stars](https://img.shields.io/github/stars/marmelab/react-admin?style=social&color=white)](https://github.com/marmelab/react-admin/stargazers)  
+- **[React Admin](https://github.com/marmelab/react-admin)** [![GitHub_Stars](https://img.shields.io/github/stars/marmelab/react-admin?style=social&color=white)](https://github.com/marmelab/react-admin/stargazers)  
   Frontend B2B application framework (MIT) based on React and Material UI. Employs an event-driven controller-view design with declarative data bindings, optimistic UI updates, and pub/sub side effects.
 
-- **[Activepieces](https://github.com/activepieces/activepieces)** [![GitHub stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers)  
+- **[Activepieces](https://github.com/activepieces/activepieces)** [![GitHub_Stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers)  
   Open-source business automation and event orchestration framework (MIT). Delivers piece-based component bindings, trigger-action event routing, webhook listeners, and visual workflow builders.
 
-- **[Node-RED](https://github.com/node-red/node-red)** [![GitHub stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers)  
+- **[Node-RED](https://github.com/node-red/node-red)** [![GitHub_Stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers)  
   Classic low-code event-driven flow programming framework (Apache-2.0). Connects physical hardware devices, Web APIs, and online services via message-driven nodes operating on a lightweight Node.js event runtime.
 
-- **[Windmill](https://github.com/windmill-labs/windmill)** [![GitHub stars](https://img.shields.io/github/stars/windmill-labs/windmill?style=social&color=white)](https://github.com/windmill-labs/windmill/stargazers)  
+- **[Windmill](https://github.com/windmill-labs/windmill)** [![GitHub_Stars](https://img.shields.io/github/stars/windmill-labs/windmill?style=social&color=white)](https://github.com/windmill-labs/windmill/stargazers)  
   Ultra-fast developer platform for internal tools and event-driven workflows (AGPL-3.0). Auto-generates user interfaces from Python, TypeScript, and Go scripts with real-time reactive execution and job scheduling.
 
-- **[ILLA Builder](https://github.com/illacloud/illa-builder)** [![GitHub stars](https://img.shields.io/github/stars/illacloud/illa-builder?style=social&color=white)](https://github.com/illacloud/illa-builder/stargazers)  
+- **[ILLA Builder](https://github.com/illacloud/illa-builder)** [![GitHub_Stars](https://img.shields.io/github/stars/illacloud/illa-builder?style=social&color=white)](https://github.com/illacloud/illa-builder/stargazers)  
   Open-source low-code development suite (Apache-2.0) with drag-and-drop reactive widgets, event action chains, database connectors, and AI agent integration.
 
-- **[Baserow](https://github.com/baserow/baserow)** [![GitHub stars](https://img.shields.io/github/stars/baserow/baserow?style=social&color=white)](https://github.com/baserow/baserow/stargazers)  
+- **[Baserow](https://github.com/baserow/baserow)** [![GitHub_Stars](https://img.shields.io/github/stars/baserow/baserow?style=social&color=white)](https://github.com/baserow/baserow/stargazers)  
   Open-source no-code database and modular application builder (MIT). Built on Django and Nuxt.js, featuring real-time WebSocket event synchronization, calculated formula fields, and extensible view components.
 
-- **[Lowcoder](https://github.com/lowcoder-org/lowcoder)** [![GitHub stars](https://img.shields.io/github/stars/lowcoder-org/lowcoder?style=social&color=white)](https://github.com/lowcoder-org/lowcoder/stargazers)  
+- **[Lowcoder](https://github.com/lowcoder-org/lowcoder)** [![GitHub_Stars](https://img.shields.io/github/stars/lowcoder-org/lowcoder?style=social&color=white)](https://github.com/lowcoder-org/lowcoder/stargazers)  
   Open-source Retool alternative (AGPL-3.0) with 120+ built-in components. Select and MultiSelect widgets expose dedicated `Change`, `Focus`, and `Blur` event triggers, alongside programmatic APIs (`setValue()`, `resetValue()`).
 
-- **[UI Bakery Self-Hosted](https://github.com/uibakery/self-hosted)** [![GitHub stars](https://img.shields.io/github/stars/uibakery/self-hosted?style=social&color=white)](https://github.com/uibakery/self-hosted/stargazers)  
+- **[UI Bakery Self-Hosted](https://github.com/uibakery/self-hosted)** [![GitHub_Stars](https://img.shields.io/github/stars/uibakery/self-hosted?style=social&color=white)](https://github.com/uibakery/self-hosted/stargazers)  
   Docker Compose and Helm orchestration repository for UI Bakery on-premises deployment. Packages visual component canvases with expand-to-fit layouts and cross-action reactive variable bindings.
 
 ---
