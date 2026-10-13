@@ -29,6 +29,7 @@ Event-driven component frameworks empower developers, platform engineers, and en
 - [🐙 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🧩 Architectural Comparison & Synthesis](#-architectural-comparison--synthesis)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support--sponsoring)
 - [⚖️ License](#️-license)
 - [⭐ Star History](#-star-history)
 
@@ -139,6 +140,22 @@ Contributions from the developer and low-code community are warmly welcomed! �
 
 ---
 
+## 💖 Support & Sponsoring
+
+Thank you for checking out this repository! If you find this curated collection of event-driven component frameworks valuable, here are a few ways to support the project:
+
+- ⭐ **Star this repository** on GitHub to amplify its reach and help more engineers find it.
+- 🍴 **Fork and contribute** by submitting new open-source frameworks, low-code tools, or ecosystem updates.
+- 📢 **Share it** on LinkedIn, X/Twitter, Reddit, and developer communities.
+- ☕ **Buy me a coffee / Sponsor**: Support continuous maintenance, research, and open-source curation through the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+<p align="left">
+  <a href="https://github.com/sponsors/ishandutta2007"><img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge&logo=github" alt="Sponsor"/></a>
+  <a href="https://github.com/sponsors/ishandutta2007"><img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"/></a>
+</p>
+
+---
+
 ## ⚖️ License
 
 [![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0)
@@ -150,13 +167,9 @@ To the extent possible under law, [Ishan Dutta](https://github.com/ishandutta200
 ## ⭐ Star History
 
 <div align="center">
-<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Event-Driven-Component-Framework&type=date&legend=bottom-right">
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Event-Driven-Component-Framework&type=date&theme=dark&legend=bottom-right" />
-<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Event-Driven-Component-Framework&type=date&legend=bottom-right" />
-<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Event-Driven-Component-Framework&type=date&legend=bottom-right" />
-</picture>
-</a>
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Event-Driven-Component-Framework&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Event-Driven-Component-Framework&type=date&legend=top-left)
+
 </div>
 
 <!-- SEO Keywords (Hidden)
