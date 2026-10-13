@@ -1,209 +1,164 @@
-# Awesome-Event-Driven-Component-Framework
-
-## Top Event-Driven Component Framework Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Reactive Bindings, Dynamic Interactions & Low-Code App Composition*  
-
-**Last updated: March 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Event-Driven Component Frameworks**. These tools enable developers and admins to compose applications where components communicate through events and reactive bindings — creating dynamic, responsive UIs without imperative glue code.
-
-
-
-**Examples** include Salesforce Dynamic Interactions, Retool, Appsmith, Superblocks, UI Bakery, Budibase, ToolJet, DronaHQ, Internal, and Lowcoder (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom component libraries, and open event-driven architectures — ideal for platform teams, internal tool builders, and developers seeking transparent, vendor-independent app frameworks.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Salesforce Dynamic Interactions](https://developer.salesforce.com/docs/platform/lwc/guide/use-config-for-app-builder-dynamic-interactions.html)**  
-
-  Lightning App Builder feature enabling admins to configure interactions between components on a page. Source components expose events via `targetConfig` metadata with `event` and `schema` subtags in the `.js-meta.xml` file . Admins select a source component event and configure target components — no code required after developer exposes the event. Only LWC can be source components; targets can be Aura or LWC. Supported property types: String, Integer, Boolean .
-
-
-
-- **[Retool](https://retool.com/)**  
-
-  Low-code platform for internal tools with component-based architecture. Components function like React components with internal state, represented as JavaScript objects . Features global `{{ }}` bindings, event handlers for user interactions, and JavaScript methods for programmatic control (e.g., `textInput1.setValue()`). Custom React/TypeScript components available via `Retool.connectReactComponent()` with `triggerQuery`, `model`, and `modelUpdate` interfaces .
-
-
-
-- **[Appsmith](https://appsmith.com/)**  
-
-  Open-source low-code platform with reactive bindings architecture. Widgets (views) respond automatically to changes in queries (controllers) and datasources (models) via MVC-like separation . No imperative event handlers needed — visibility, values, and states are declaratively bound with `{{ }}` expressions. Data flows: Model → Controller → View for reads; View → Controller → Model for writes .
-
-
-
-- **[Superblocks](https://superblocks.com/)**  
-
-  Enterprise app platform with hybrid deployment. Control plane and AI inference run in Superblocks cloud; data plane executes inside customer VPC (AWS, GCP, Azure) for production data locality . Production APIs never leave customer network. Outbound-only connectivity — no inbound firewall ports required. Centralized governance with enterprise SSO and RBAC managed from cloud .
-
-
-
-- **[UI Bakery](https://uibakery.io/)**  
-
-  Low-code platform with visual component composition. Components expose variables like `{{ui.componentName.value}}` and `{{ui.componentName.selectedRow.data}}` for binding across actions and properties . Action results available as `{{actions.actionName.data}}`. Card component enables layout composition with expand-to-fit behavior for responsive dashboards .
-
-
-
-- **[Budibase](https://budibase.com/)**  
-
-  Open-source low-code platform with Blocks — pre-built components combining multiple sub-components (Data Provider, Repeater, Card) . Blocks expose global bindings like `{{ MyFormBlock.Fields.FirstName }}` and can be ejected into constituent components for granular customization. App-level bindings include URL parameters, app state, current user, device, and role .
-
-
-
-- **[ToolJet](https://tooljet.com/)**  
-
-  Open-source low-code platform with module-based data flow. Parent-to-module via input parameters (`{{input.userData}}`), module-to-parent via output parameters (`{{components.<moduleName>.submittedFormData}}`) . Queries can be parent-triggered or self-contained within module. Workflow nodes include Start Trigger, JavaScript, If Condition, Loop, and Data Source nodes for event-driven automation .
-
-
-
-- **[DronaHQ](https://dronahq.com/)**  
-
-  Low-code platform with container app architecture. Micro-apps run inside native containers (iOS, Android, Windows, Web) with User Management, Micro-app Management, Notification Manager, WebView Runtime, and Security Manager . Widgets for Agent Builder enable AI-generated structured data to render as custom React UI components via JSON Schema .
-
-
-
-- **[Internal](https://internal.io/)**  
-
-  Low-code platform with auto-generated functions from connected data sources. Spaces created per datasource for exploring data and creating relationships. No-code configuration with optional custom SQL and JavaScript .
-
-
-
-- **[Lowcoder](https://lowcoder.cloud/)**  
-
-  Open-source Retool alternative with drag-and-drop editor. Select/MultiSelect components expose `value`, `selectedIndex`, `selectedLabel` properties and `Change`, `Focus`, `Blur` events . Component methods include `setValue()`, `clearValue()`, `resetValue()`, `setDefaultValue()`. Self-hostable with MongoDB and Redis .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Appsmith](https://github.com/appsmithorg/appsmith)**  
-
-  Open-source low-code platform (Apache-2.0) with reactive binding architecture. 45+ widgets, 50+ datasource connectors. Widgets automatically update based on state changes — no imperative event handlers . Self-hostable via Docker. G2 Winter 2026: 89% application deployment satisfaction.
-
-
-
-- **[Budibase](https://github.com/Budibase/budibase)**  
-
-  Open-source low-code platform (GPL-3.0) with Blocks system. Pre-built blocks (Cards, Repeater, Form, Chart, Multi-Step Form) combine multiple components . Global bindings scoped by component name. Eject blocks to granular components. Self-hostable with Docker.
-
-
-
-- **[ToolJet](https://github.com/ToolJet/ToolJet)**  
-
-  Open-source low-code platform (AGPL-3.0) with module-based composition. Data flow between parent and module via input/output parameters . Workflow automation with Start Trigger, JavaScript, If Condition, Loop, and Data Source nodes . G2 Winter 2026: 94% application deployment satisfaction.
-
-
-
-- **[Lowcoder](https://github.com/Nangelov7/lowcoder)**  
-
-  Open-source Retool/Appsmith/ToolJet alternative (AGPL-3.0). 120+ built-in components, native website embedding (no iframe), video meeting components, RBAC, self-hosting . Continues from abandoned Openblocks project. Railway one-click deploy template with MongoDB and Redis.
-
-
-
-- **[DronaHQ Self-Hosted](https://github.com/dronahq/dronahq-self-hosted)**  
-
-  Self-hosted edition of DronaHQ low-code platform. Container app architecture with micro-apps, user management, and security modules . Widgets system for AI agent UI rendering .
-
-
-
-- **[UI Bakery](https://github.com/uibakery)**  
-
-  Component library and documentation for UI Bakery platform. Components expose variables for cross-component binding . Expand-to-fit and Card container patterns for responsive layouts .
-
-
-
-- **[Lowcoder](https://github.com/lowcoder-org/lowcoder)**  
-
-  Open-source low-code platform community edition. Select/MultiSelect components with full property, event, and method API . Self-hosted with MongoDB 7 and Redis 8 .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Refine](https://github.com/refinedev/refine)** — React framework (MIT) for building admin panels and internal tools with headless components.
-
-- **[React Admin](https://github.com/marmelab/react-admin)** — Frontend framework (MIT) for B2B applications on REST/GraphQL APIs.
-
-- **[Baserow](https://github.com/baserow/baserow)** — Open-source no-code database (MIT) with application builder.
-
-- **[NocoDB](https://github.com/nocodb/nocodb)** — Open-source Airtable alternative (AGPL-3.0) with API-first architecture.
-
-- Community **n8n** workflows for component-level automation and event routing.
-
-
-
-**Frameworks for building custom systems**: Combine **Appsmith** or **ToolJet** as the low-code app layer with **Budibase** for block-based composition, **Lowcoder** for self-hosted deployment, and **PostgreSQL/MongoDB** for persistence — creating a fully self-hosted, enterprise-grade event-driven component platform.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Event-driven component frameworks handling business data must comply with data protection regulations (GDPR, CCPA, etc.).
-
-- Self-hosted open-source solutions require proper security hardening, infrastructure provisioning, and ongoing maintenance. Reactive architectures reduce imperative code but require understanding of dependency graphs for debugging complex interactions.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Event-Driven Component Framework Banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Event-Driven-Component-Framework/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Event-Driven-Component-Framework?style=flat-square&color=gold" alt="Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Event-Driven-Component-Framework/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Event-Driven-Component-Framework?style=flat-square&color=blue" alt="Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Event-Driven-Component-Framework/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Event-Driven-Component-Framework/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+# ⚡ Awesome Event-Driven Component Framework
 
+> 🚀 **A curated index of enterprise SaaS platforms and battle-tested open-source projects powering Event-Driven Component Architectures, Reactive UI Bindings, and Low-Code Application Composition.**
 
-**Made for platform engineers, internal tool builders, citizen developers, and organizations building transparent app frameworks.**  
+Event-driven component frameworks empower developers, platform engineers, and enterprise architects to assemble applications where reusable UI widgets communicate seamlessly via event buses, state listeners, and reactive bindings — eliminating fragile imperative glue code.
 
-Let's make Event-Driven Component Frameworks more open, data-driven, and reactive.
+---
+
+## 📑 Table of Contents
+
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS / Hosted Platforms](#️-saas--hosted-platforms)
+- [🐙 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🧩 Architectural Comparison & Synthesis](#-architectural-comparison--synthesis)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ License](#️-license)
+- [⭐ Star History](#-star-history)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global **Low-Code Development & Internal Tool Frameworks** market is estimated at **$28.5 Billion in 2024–2025** and is projected to surpass **$65–$70 Billion by 2030**, advancing at a robust compound annual growth rate (**CAGR of ~22.5%**). Growth is propelled by accelerating enterprise demand for developer velocity, AI-assisted app authoring, and composable micro-frontend ecosystems.
+
+**Market Concentration & Fragmentation**:
+The sector is **moderately fragmented**:
+- **Enterprise Suites (Concentrated Tier)**: Trillion-dollar mega-cap ecosystems like **Microsoft Power Apps (PCF)** and **Salesforce Lightning** hold significant market share across large enterprises with CRM/ERP-centric workloads.
+- **Developer-First & Open-Core Innovators (Fragmented Tier)**: Specialized low-code platforms (such as **Retool**, **Appsmith**, **Budibase**, **ToolJet**, and **Superblocks**) vigorously compete for modern engineering and platform teams that demand fine-grained JavaScript/TypeScript runtime control, VPC/self-hosting privacy, and headless component flexibility.
+
+---
+
+## ☁️ SaaS / Hosted Platforms
+
+The following SaaS and managed cloud platforms represent category leaders in event-driven UI composition and low-code app development. Entries are sorted descending by **Company Valuation / Revenue**.
+
+| Platform / Product | 🏢 Company Valuation / Revenue | 💳 Starting Paid Tier Pricing | 🎁 Free Tier / Trial Limits | ⚙️ Core Event Architecture & Reactive Mechanisms |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Power Apps (PCF)](https://powerapps.microsoft.com/)** | **$3.1T Market Cap** / **$245B Annual Revenue** | **$5/user/app/month** (or **$20/user/month** for unlimited apps) | **Free forever Developer Plan** (unlimited apps for development and prototyping, 3 environments, Dataverse included) | Power Apps Component Framework (PCF) with manifest-driven event definitions, `notifyOutputChanged()` reactive lifecycle methods, and bi-directional context bindings. |
+| **[Salesforce Dynamic Interactions](https://developer.salesforce.com/docs/platform/lwc/guide/use-config-for-app-builder-dynamic-interactions.html)** | **$285B Market Cap** / **$37.9B Annual Revenue** | **$25/user/month** (Salesforce Platform Starter, billed annually) | **Free forever Developer Edition org** (2 full Salesforce Developer seats, 5MB data storage, 20MB file storage, full REST/SOAP APIs) | Lightning App Builder event binding via `targetConfig` metadata schemas in `.js-meta.xml`. LWC source components fire custom events consumed declaratively by Aura/LWC target components. |
+| **[Internal.io](https://www.hubspot.com/)** *(Acquired by HubSpot)* | **$28B Market Cap** / **$2.6B Annual Revenue** | **$25/user/month** *(original rate; now part of HubSpot Operations/Service Pro at $15–$20/seat/mo)* | **14-day free trial** with full platform capabilities, unlimited datasources, and staging environments | Auto-generated event-driven functions from attached databases and APIs; reactive relationship graphs across disparate enterprise services. |
+| **[Retool](https://retool.com/)** | **$3.2B Valuation** (Series C) / **~$100M+ ARR** | **$10/user/month** ($10/builder/mo + $5/end-user/mo on Team plan, billed annually) | **Free forever for up to 5 users** (unlimited web & mobile apps, 500 workflow runs/month, 5GB Retool DB storage, 250 AI credits/month) | React/TypeScript component runtime, global reactive `{{ }}` dependency graphs, event handlers (`triggerQuery`, `setValue()`), and bidirectional component bridges (`Retool.connectReactComponent()`). |
+| **[Superblocks](https://superblocks.com/)** | **$150M Valuation** / **~$15M ARR** | **$100/month** (Teams plan, billed annually; covers up to 15 builders & unlimited end-users) | **14-day free trial** of Teams plan (up to 15 builders, unlimited end users, customer VPC agent connectivity) | Hybrid control plane with VPC data plane execution. Reactive component bindings, event streaming endpoints, and zero-inbound-port firewall architecture. |
+| **[Appsmith (Cloud)](https://appsmith.com/)** | **$150M Valuation** (Series B) / **~$12M ARR** | **$15/user/month** (Business tier, billed annually; or **$0.40/user/hour** capped at $20/user/mo) | **Free forever Cloud Community tier for up to 5 users** (5 workspaces, 3 Git repositories, unlimited public & private apps, or unlimited self-hosted Community) | Reactive MVC binding engine (`{{ }}` expressions). Automatic dependency graph recalculation updating widgets without imperative event glue code. |
+| **[Budibase (Cloud)](https://budibase.com/)** | **$45M Valuation** / **~$5M ARR** | **$19/user/month** (Pro plan, billed annually; or **$23/user/month** billed monthly) | **14-day free trial** of Pro/Premium Cloud plans (or 100% free forever self-hosted open-source edition with unlimited users and apps) | Composable Blocks hierarchy (Data Provider $\rightarrow$ Repeater $\rightarrow$ Component), global scoped `{{ }}` context bindings, and serverless automation action pipelines. |
+| **[ToolJet (Cloud)](https://tooljet.com/)** | **$35M Valuation** / **~$4M ARR** | **$24/builder/month** (Business tier, billed annually) | **Free forever Cloud tier for up to 2 builders & 50 end-users** (2 applications, 100 AI credits/month, or unlimited self-hosted Community) | Module-based component data flow, bidirectional parent/module parameters (`{{input.data}}`), and visual event-driven workflow nodes. |
+| **[DronaHQ](https://dronahq.com/)** | **$30M Valuation** / **~$6M ARR** | **$100/month** (Starter plan, billed annually at $1,200/yr; includes unlimited users & 25,000 tasks/month) | **30-day free trial** of Business plan with unrestricted access, unlimited users, and full connector suite (no credit card required) | Containerized micro-app runtime (Web, iOS, Android), JSON Schema event bindings, and AI agent UI action runners. |
+| **[UI Bakery](https://uibakery.io/)** | **$20M Valuation** / **~$3M ARR** | **$20/developer/month** (Builder plan, billed annually) | **Free forever plan for unlimited developers & public apps** (prototyping tier with trial AI credits, 1 workspace environment, unlimited data sources) | Visual component composability with `{{ui.component.value}}` variables, action result mapping (`{{actions.actionName.data}}`), and expand-to-fit container layouts. |
+| **[Lowcoder (Cloud)](https://lowcoder.cloud/)** | **$12M Valuation** / **~$2M ARR** | **€459/instance/month** (flat-rate self-hosted Enterprise instance; or $11/mo third-party managed dedicated cloud) | **Free forever shared public cloud (`app.lowcoder.cloud`)** (unlimited prototyping apps and users) or free self-hosted AGPL-3.0 edition | 120+ built-in widgets, bi-directional property/event/method APIs (`setValue()`, `resetValue()`), and native embedding without iframes. |
+
+---
+
+## 🐙 Open-Source GitHub Projects
+
+Explore the most prominent open-source event-driven component frameworks, low-code builders, and reactive application platforms. Sorted descending by **GitHub Star Count**.
+
+- **[NocoDB](https://github.com/nocodb/nocodb)** [![GitHub stars](https://img.shields.io/github/stars/nocodb/nocodb?style=social&color=white)](https://github.com/nocodb/nocodb/stargazers)  
+  Open-source smart spreadsheet and relational app builder (AGPL-3.0). Connects to MySQL, PostgreSQL, SQL Server, and SQLite. Features an API-first architecture, reactive grid component interactions, webhooks, and event-triggered automations.
+
+- **[Payload CMS](https://github.com/payloadcms/payload)** [![GitHub stars](https://img.shields.io/github/stars/payloadcms/payload?style=social&color=white)](https://github.com/payloadcms/payload/stargazers)  
+  Code-first full-stack TypeScript framework (MIT) with modular React UI components. Provides event-driven document lifecycle hooks (`beforeChange`, `afterRead`), native GraphQL/REST generation, and headless application composition.
+
+- **[ToolJet](https://github.com/ToolJet/ToolJet)** [![GitHub stars](https://img.shields.io/github/stars/ToolJet/ToolJet?style=social&color=white)](https://github.com/ToolJet/ToolJet/stargazers)  
+  Open-source low-code platform (AGPL-3.0) with module-based component composition. Supports bidirectional event parameters between parent and child modules (`{{input.userData}}` $\leftrightarrow$ `{{components.<module>.submittedData}}`) and visual workflow automation nodes.
+
+- **[Appsmith](https://github.com/appsmithorg/appsmith)** [![GitHub stars](https://img.shields.io/github/stars/appsmithorg/appsmith?style=social&color=white)](https://github.com/appsmithorg/appsmith/stargazers)  
+  Open-source low-code internal tool builder (Apache-2.0) featuring 45+ UI widgets and 50+ datasource connectors. Uses declarative JS bindings (`{{ }}`) with an automatic reactive dependency engine that recalculates widget states on data changes without imperative event listeners.
+
+- **[Directus](https://github.com/directus/directus)** [![GitHub stars](https://img.shields.io/github/stars/directus/directus?style=social&color=white)](https://github.com/directus/directus/stargazers)  
+  Real-time open data platform and application engine (BOSL-1.0). Provides a dynamic Vue.js administrative app with modular reactive component displays, custom interface extensions, and event-driven data flows.
+
+- **[Refine](https://github.com/refinedev/refine)** [![GitHub stars](https://img.shields.io/github/stars/refinedev/refine?style=social&color=white)](https://github.com/refinedev/refine/stargazers)  
+  Headless React framework (MIT) for building enterprise internal tools, admin panels, and CRUD apps. Decouples business logic and state from UI presentation; provides event-driven hooks for data access, routing, access control, and live notifications.
+
+- **[Budibase](https://github.com/Budibase/budibase)** [![GitHub stars](https://img.shields.io/github/stars/Budibase/budibase?style=social&color=white)](https://github.com/Budibase/budibase/stargazers)  
+  Open-source low-code platform (GPL-3.0) with a composable Blocks system. Pre-assembled blocks (Cards, Forms, Repeaters, Charts) encapsulate nested UI structures with scoped reactive bindings (`{{ MyFormBlock.Fields.Email }}`) and built-in automation pipelines.
+
+- **[React Admin](https://github.com/marmelab/react-admin)** [![GitHub stars](https://img.shields.io/github/stars/marmelab/react-admin?style=social&color=white)](https://github.com/marmelab/react-admin/stargazers)  
+  Frontend B2B application framework (MIT) based on React and Material UI. Employs an event-driven controller-view design with declarative data bindings, optimistic UI updates, and pub/sub side effects.
+
+- **[Activepieces](https://github.com/activepieces/activepieces)** [![GitHub stars](https://img.shields.io/github/stars/activepieces/activepieces?style=social&color=white)](https://github.com/activepieces/activepieces/stargazers)  
+  Open-source business automation and event orchestration framework (MIT). Delivers piece-based component bindings, trigger-action event routing, webhook listeners, and visual workflow builders.
+
+- **[Node-RED](https://github.com/node-red/node-red)** [![GitHub stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers)  
+  Classic low-code event-driven flow programming framework (Apache-2.0). Connects physical hardware devices, Web APIs, and online services via message-driven nodes operating on a lightweight Node.js event runtime.
+
+- **[Windmill](https://github.com/windmill-labs/windmill)** [![GitHub stars](https://img.shields.io/github/stars/windmill-labs/windmill?style=social&color=white)](https://github.com/windmill-labs/windmill/stargazers)  
+  Ultra-fast developer platform for internal tools and event-driven workflows (AGPL-3.0). Auto-generates user interfaces from Python, TypeScript, and Go scripts with real-time reactive execution and job scheduling.
+
+- **[ILLA Builder](https://github.com/illacloud/illa-builder)** [![GitHub stars](https://img.shields.io/github/stars/illacloud/illa-builder?style=social&color=white)](https://github.com/illacloud/illa-builder/stargazers)  
+  Open-source low-code development suite (Apache-2.0) with drag-and-drop reactive widgets, event action chains, database connectors, and AI agent integration.
+
+- **[Baserow](https://github.com/baserow/baserow)** [![GitHub stars](https://img.shields.io/github/stars/baserow/baserow?style=social&color=white)](https://github.com/baserow/baserow/stargazers)  
+  Open-source no-code database and modular application builder (MIT). Built on Django and Nuxt.js, featuring real-time WebSocket event synchronization, calculated formula fields, and extensible view components.
+
+- **[Lowcoder](https://github.com/lowcoder-org/lowcoder)** [![GitHub stars](https://img.shields.io/github/stars/lowcoder-org/lowcoder?style=social&color=white)](https://github.com/lowcoder-org/lowcoder/stargazers)  
+  Open-source Retool alternative (AGPL-3.0) with 120+ built-in components. Select and MultiSelect widgets expose dedicated `Change`, `Focus`, and `Blur` event triggers, alongside programmatic APIs (`setValue()`, `resetValue()`).
+
+- **[UI Bakery Self-Hosted](https://github.com/uibakery/self-hosted)** [![GitHub stars](https://img.shields.io/github/stars/uibakery/self-hosted?style=social&color=white)](https://github.com/uibakery/self-hosted/stargazers)  
+  Docker Compose and Helm orchestration repository for UI Bakery on-premises deployment. Packages visual component canvases with expand-to-fit layouts and cross-action reactive variable bindings.
+
+---
+
+## 🧩 Architectural Comparison & Synthesis
+
+| Architectural Pattern | Primary Pioneers | Event Communication Mechanism | Developer Customizability | Best Suited For |
+| :--- | :--- | :--- | :--- | :--- |
+| **Manifest-Driven Event Bus** | Salesforce LWC, Microsoft PCF | Metadata XML schema declaration + custom event dispatch | Strict SDK / Typed contracts | Regulated enterprise ecosystems, CRM extensions |
+| **Reactive Expression Graphs** | Appsmith, Retool, UI Bakery | Declarative `{{ }}` AST evaluation & automatic dependency recalculation | Custom React/TS components + JS expressions | High-velocity internal apps, database frontends |
+| **Modular Hierarchical Scoping** | Budibase, ToolJet, Lowcoder | Explicit input/output parameter channels & block nesting | Custom plugins, self-hosted Docker extensions | Multi-page enterprise tools, modular team apps |
+| **Headless UI Component Hooks** | Refine, React Admin | React Hooks (`useList`, `useTable`), context pub/sub | Complete frontend framework autonomy | Custom branded portals, customer-facing B2B apps |
+| **Flow-Based Event Orchestration** | Node-RED, Activepieces, Windmill | Message pipeline packets (`msg.payload`), asynchronous queues | Python, TypeScript, Node.js scripts | IoT event streams, workflow automations, webhooks |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions from the developer and low-code community are warmly welcomed! 🌟
+
+1. 🍴 **Fork the repository** to your GitHub account.
+2. 📝 **Add or update an entry** in [README.md](README.md) following the established table and markdown formats.
+3. 🔍 **Ensure factual accuracy**: Include official links, explicit starting tier prices, specific free tier limits, and verifiable star links.
+4. 🚀 **Submit a Pull Request** with a concise description of your additions.
+
+---
+
+## ⚖️ License
+
+[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0)
+
+To the extent possible under law, [Ishan Dutta](https://github.com/ishandutta2007) has waived all copyright and related rights to this work.
+
+---
+
+## ⭐ Star History
+
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Event-Driven-Component-Framework&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Event-Driven-Component-Framework&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Event-Driven-Component-Framework&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Event-Driven-Component-Framework&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
+<!-- SEO Keywords (Hidden)
+Event-Driven Architecture Event-Driven Component Framework Reactive UI Components Low-Code Application Platforms Internal Tools Builders Dynamic Interactions Salesforce Lightning PCF Power Apps Component Framework Retool Appsmith Budibase ToolJet NocoDB Refine React-Admin Payload CMS Directus Activepieces Node-RED Windmill ILLA Builder Baserow Lowcoder UI Bakery Micro-Frontends Reactive State Management Webhook Orchestration Composable UI Frameworks Declarative Bindings Open-Source Developer Tools Awesome List Curated Resources
+-->
